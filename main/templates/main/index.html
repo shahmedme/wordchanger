@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Change the page number of a string in PYTHON</title>
+</head>
+
+<body>
+    <h1>String Changer</h1>
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+        <table>
+            <tr>
+                <td>Find Text</td>
+                <td>:</td>
+                <td><input type="text" name="main" /></td>
+            </tr>
+            <tr>
+                <td>Replace</td>
+                <td>:</td>
+                <td><input type="text" name="temp" /></td>
+            </tr>
+            <tr>
+                <td>Select a file</td>
+                <td>:</td>
+                <td><input type="file" name="fin"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input action="/index.html" type="submit" value="Change" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
